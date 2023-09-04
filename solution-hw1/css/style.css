@@ -1,0 +1,161 @@
+*{
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+button {
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+    border-radius: 0px;
+    background-color: yellow;
+}
+
+/******header******/
+.header {
+    border-bottom: solid 3px black;
+    padding: 20px 0px;
+}
+.header img {
+    width: 400px;
+}
+
+/******menu******/
+.menu {
+    margin-bottom: 60px;
+}
+
+.menu ul li{
+    text-align: center;
+    list-style: none;
+    line-height: 2em;
+}
+
+.menu ul a{
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/******Product Gallery Page******/
+.product-card {
+    width: fit-content;
+    padding: 10px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    line-height: 0.5em;
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+.product-card:hover {
+    background-color: yellow;
+}
+
+.product-card:hover .product-name {
+    font-weight: bold;
+}
+
+.product-card .product-name{
+    text-decoration: underline;
+}
+
+.product-card img {
+    width: 400px;
+    border: solid 2px black;
+}
+
+/******Product detail page******/
+.product-detail {
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.product-detail img {
+    width: 600px;
+    border: solid 2px black;
+}
+
+.product-detail-content {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.product-detail-content p {
+    margin-bottom: 40px;
+}
+
+.product-detail-content form .options{
+    margin-bottom: 20px;
+}
+
+.product-detail-content form label,select{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25em;
+}
+
+.product-detail-price {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/******Cart Page******/
+.cart-list {
+    width: 500px;
+    margin: 0px auto;
+}
+
+.cart-product-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cart-product-card img {
+    width: 200px;
+    border: solid 2px black;
+}
+
+.cart-product-card p {
+    line-height: 0.25em;
+}
+
+.cart-product-card button {
+    display: block;
+    margin: 0px auto;
+    padding: 0.25em 0.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+
+.item-price {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+}
+
+hr.bottom-line {
+    border-top: solid 3px black;
+}
+
+.checkout {
+    text-align: center;
+}
