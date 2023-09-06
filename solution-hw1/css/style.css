@@ -10,6 +10,10 @@ a {
     color: black;
 }
 
+p {
+    font-size: 20px;
+}
+
 button {
     padding: 0.5em 1.5em;
     font-weight: bold;
@@ -31,6 +35,11 @@ button {
     margin-bottom: 60px;
 }
 
+.menu ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
 .menu ul li{
     text-align: center;
     list-style: none;
@@ -42,6 +51,11 @@ button {
 }
 
 .menu ul a:hover {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.menu .on-page {
     font-weight: bold;
     background-color: yellow;
 }
@@ -125,7 +139,7 @@ button {
 
 .cart-product-card {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .cart-product-card img {
@@ -148,7 +162,7 @@ button {
 }
 
 .item-price {
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-top: 1.5em;
 }
 
