@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+
+    <!--Header-->
+    <div class="header">
+
+      <a href="index.html"><img src="../assets/logo/logo-01.svg" width="400" alt="Bun Bun bake shop logo"></a>
+      
+      <div class="header-right">
+        <!--Menu-->
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">PRODUCTS</a></li>
+            <li><a href="shopping-cart.html">CART</a></li>
+          </ul>
+        </div>
+        <!--Line-->
+        <hr class="header-line">
+        <!--Page Title-->
+        <div class="page-title">
+          <h2>Original cinnamon roll</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Product Detail-->
+    <div class="product-detail">
+      <!--product image (left)-->
+      <img src="../assets/products/original-cinnamon-roll.jpg" class="product-detail-img" width="600" alt="original cinnamon roll">
+
+      <!--prodduct detail (right)-->
+      <div class="product-detail-content">
+        
+        <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
+
+        <form>
+          <div class="options">
+            <label for="glazing">Glazing</label>
+            <select id="glazing" onchange="glazingChange(this)">
+              <!--dynamic options-->
+            </select>
+          </div>
+          
+          <div class="options">
+            <label for="pack">Pack size</label>
+            <select id="pack" onchange="packChange(this)">
+              <!--dynamic options-->
+            </select>
+          </div>
+        </form>
+          
+        <div class="add-to-cart">
+          <span id="product-detail-price"></span>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!--JS-->
+    <script src="js/rollsData.js"></script>
+    <script src="js/optionsData.js"></script>
+    <!--<script src="js/cartData.js"></script>-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

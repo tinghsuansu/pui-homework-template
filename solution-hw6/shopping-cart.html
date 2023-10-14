@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body onload="addDynamicRoll(), calculateTotalPrice()">
+
+    <!--Header-->
+    <div class="header">
+
+      <a href="index.html"><img src="../assets/logo/logo-01.svg" width="400" alt="Bun Bun bake shop logo"></a>
+      
+      <div class="header-right">
+        <!--Menu-->
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">PRODUCTS</a></li>
+            <li><a href="shopping-cart.html" class="on-page">CART</a></li>
+          </ul>
+        </div>
+        <!--Line-->
+        <hr class="header-line">
+        <!--Page Title-->
+        <div class="page-title">
+          <h2>Shopping Cart</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Cart-->
+    <div class="cart">
+      <!--item list-->
+      <div class="item-list">
+        <!--dynamic rolls here-->
+      </div>
+
+      <!--line-->
+      <hr class="bottom-line">
+
+      <!--checkout-->
+      <div class="checkout">
+
+        <!--total-->
+        <div class="total">
+          <p class="item-price">Total</p>
+          <p class="item-price">$ <span id="total-price">0.00</span></p>
+        </div>
+        
+        <!--checkout button-->
+        <div class="checkout-down">
+          <button>Checkout</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--JS-->
+    <script src="js/rollsData.js"></script>
+    <script src="js/optionsData.js"></script>
+    <!--<script src="js/cartData.js"></script>-->
+    <script src="js/script-cart.js"></script>
+  </body>
+</html>
