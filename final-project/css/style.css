@@ -334,11 +334,11 @@ footer span {
 }
 
 .bg-sarea-city {
-    background-image: url("/assets/img/list-item_sarea-bg.png");
+    background-image: url("../assets/img/list-item_sarea-bg.png");
 }
 
 .bg-light-kit {
-    background-image: url("/assets/img/list-item_kit-bg.png");
+    background-image: url("../assets/img/list-item_kit-bg.png");
 }
 
 .project-list-number {
@@ -441,17 +441,17 @@ footer span {
 }
 
 .li-resume {
-    background:url('/assets/icon/open-in-new.svg') 0 50% no-repeat no-repeat;
+    background:url('../assets/icon/open-in-new.svg') 0 50% no-repeat no-repeat;
     padding-left: 28px;
 }
 
 .li-linkedin {
-    background:url('/assets/icon/linkedin.svg') 0 50% no-repeat no-repeat;
+    background:url('../assets/icon/linkedin.svg') 0 50% no-repeat no-repeat;
     padding-left: 28px;
 }
 
 .li-email {
-    background:url('/assets/icon/mail.svg') 0 50% no-repeat no-repeat;
+    background:url('../assets/icon/mail.svg') 0 50% no-repeat no-repeat;
     padding-left: 28px;
 }
 
