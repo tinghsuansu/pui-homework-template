@@ -1,0 +1,108 @@
+<!--container of header-->
+<div id="container-header">
+    <!--header-->
+    <div class="container header">
+        <div class="logo">
+            <a href="index.html">Jasmine Su</a>
+        </div>
+
+        <div class="menu">
+            <a class="jump-to-list">Projects</a>
+            <a class="jump-to-about">About Me</a>
+        </div>
+    </div>
+
+    <script>
+
+        // the default value of spaceBetween of swiperInner
+        let swiperInnerSpace = -100;
+
+        /*** declare swiper(parent slider) and swiperInner(child slider) ***/
+            let swiper = new Swiper('.swiper', {
+                direction: "vertical",
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                mousewheel: {
+                    releaseOnEdges: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                noSwipingClass: 'noswipe',
+            });
+
+            let swiperInner = new Swiper('.swiper-inner', {
+                direction: "vertical",
+                slidesPerView: 'auto',
+                spaceBetween: '-100',
+                nested: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                mousewheel: {
+                    releaseOnEdges: true,
+                },
+
+            });
+
+
+        /*** menu action ***/
+
+            // action of "project" button
+            $(".jump-to-list").click(function () {
+                setTimeout(function () {
+                    swiper[0].slideTo(2);
+                    swiperInner.slideTo(0);
+                }, 175);
+            })
+
+            // action of "about me" button
+            $(".jump-to-about").click(function () {
+                setTimeout(function () {
+                    swiper[0].slideTo(2);
+                    swiperInner.slideTo(2);
+                }, 175);
+            })
+
+
+        /*** change the space between each slide in swiperInner according to screen width ***/
+            /* reference:
+                https://www.w3schools.com/jsref/met_win_matchmedia.asp
+                http://www.javascriptkit.com/javatutors/matchmediamultiple.shtml
+            */
+
+            // Create a MediaQueryList object
+            const mmObj = [window.matchMedia("(max-width: 768px)"), window.matchMedia("(max-width: 992px)")]
+
+            // Change the space between each slide according to screen width
+            function myFunction(x) {
+                if (x[0].matches) {
+                    swiperInner.params.spaceBetween = -80;
+                    console.log('width < 768, space is: ' + swiperInner.params.spaceBetween);
+                }
+                else if (x[1].matches) {
+                    swiperInner.params.spaceBetween = -180;
+                    console.log('width < 992, space is: ' + swiperInner.params.spaceBetween);                
+                }
+                else {
+                    swiperInner.params.spaceBetween = -100;
+                    console.log('width > 992, space is: ' + swiperInner.params.spaceBetween);
+                }
+            }
+
+            // Call the match function at run time
+            myFunction(mmObj);
+
+            // Add the match function as a listener for state changes
+            for (i = 0; i < mmObj.length; i++) {
+                mmObj[i].addEventListener("change", function () {
+                    myFunction(mmObj);
+                });
+            }
+        
+
+    </script>
+</div>

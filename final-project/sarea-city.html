@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jasmine Su</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <!--header here-->
+    <div id="linked-header-project"></div>
+
+    <!--hero banner-->
+    <div class="hero bg-sarea-city">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="project-list-item-title">
+                        <h4 class="project-list-number">01</h4>
+                        <h1>Sarea City</h1>
+                        <h3>Real-time Street Lighting Management Platform Redesign</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 project-list-item-tb">
+                    <img src="assets/img/list-item_sarea-tb.png" width="100%" alt="sarea city dashboard">
+                </div>   
+
+            </div>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="container project-content">
+        
+        <!--intro + project info-->
+        <div class="row  align-items-center">
+            <div class="col-md-7">
+                <p>Sarea City is Spark Technologies’ new smart street lighting management platform for corporations and governments. Spark Technologies has built several smart street lighting management platforms before, but they became inconsistent in design system and experience because of the unorganized updates over the years. Thus, the goal of this project was to optimize the platform’s user experience and create a modular design system, making it meet users’ needs and easy to maintain.</p>
+            </div>
+
+            <div class="col-md-5 project-info">
+                <div>
+                    <h3>Project Info</h3>
+                    <p>
+                        2022 | Spark Technologies Inc.</br>
+                        My role: UI Designer</br>
+                    </p>
+                    <ul>
+                        <li>Designed UI and visual identity of the product</li>
+                        <li>Built design system and guideline</li>
+                        <li>Assisted UX optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--project overview-->
+        <div class="row align-items-center">
+            <h2>Project Overview & Goals</h2>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <video width="100%" autoplay loop muted style="margin: 24px auto;">
+                        <source src="assets/img/sarea city-2x-webp/map view.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+            </div>
+            
+            <div class="col-md-6">
+                <p>The most important functions of the platform for street light maintenance staff are monitoring and controlling Internet of Things (IoT) devices. Through the map view page, they can monitor the status of each IoT device on the light poles and control them remotely. They can also intuitively add, edit, or delete data through the map view page. </p>
+            </div>
+            <div class="col-md-6 row">
+                <div class="col-md-4 icon-and-text">
+                    <img src="assets/img/sarea city-2x-webp/icon_monitor.svg" width="64px" height="64px" alt="IoT devices icon">
+                    <p class="img-caption">Monitor IoT devices’ statuses</p class="img-caption">
+                </div>
+                <div class="col-md-4 icon-and-text">
+                    <img src="assets/img/sarea city-2x-webp/icon_pole info.svg" width="64px" height="64px" alt="edit information icon">
+                    <p class="img-caption">Check & edit smart street lights’ information</p class="img-caption">
+                </div>
+                <div class="col-md-4 icon-and-text">
+                    <img src="assets/img/sarea city-2x-webp/icon_control.svg" width="64px" height="64px" alt="remote control icon">
+                    <p class="img-caption">Control smart street lights remotely</p class="img-caption">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--challenge 01-->
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Challenge 01: Map pin design style</h2>
+                <h3>Create a new map pin design system that is clear, simple, and future-proofing</h3>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>What is the Map Pin?</h3>
+                <p>Map pins demonstrate the smart pole’s location and the attached devices’ status on the map.</p>
+                <p>“Smart Poles” and “Devices” are the two most essential elements in the map view. “Smart Poles” are light poles where the devices are installed. “Devices” include all IoT devices, like controllers of luminaires and controllers of electrical switch boxes.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/sarea city-2x-webp/sarea_map pin_explain.webp" width="100%" alt="map pin and smart pole">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>Problem: The Old Map Pins are Hard to Identify</h3>
+                <p>In the existing platform, we used different colors on rings and circles to define the different statuses of each smart pole. However, as the number of installed IoT devices increased, the combination of colors on the map pins became too complicated and hard to identify.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/sarea city-2x-webp/sarea_map pin_before.webp" width="100%" alt="old map pin design">
+            </div>
+        </div>
+
+        <div class="content-inner-section">
+            <div class="row">
+                <h3>How We Solved It:</h3>
+            </div>
+            <div class="row align-items-center">
+                
+                <div class="col-md-6">
+                    <h4>Design Changes: Shape and Color</h4>
+                    <p>We replaced the original circular icon with the pin-shaped icon to help users identify the accurate location of the street light pole by the pinpoint.</p>
+                    <p>For street light maintenance staff, the statuses of luminaire controllers are more important than other kinds of IoT devices. Thus, we decided to focus on the luminaire controllers’ statuses and used the map pin’s color to represent them.</p>
+                    <p>As for other IoT devices (ex. electrical switch box controller), we used the little dot on the top-right corner to display their status.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/sarea city-2x-webp/sarea_map pin_after-1.webp" width="100%" alt="new map pin design">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4>Status: “Constant” and “Switching”</h4>
+                    <p>We used five distinct colors to display whether the device was on, off, off-line, alert, or under repair. The pin would remain white if there weren’t any devices on the pole.</p>
+                    <p>It is worth noting that, after controlling the light through the platform, there might be a short time gap before the luminaire controller receives the signal and adjust the light. Therefore, users cannot know if they have successfully controlled the lights from the platform immediately. To prevent users from sending repeating commands to the luminaire controller, we need a special “switching” status for this time gap.</p>
+                    <p>In the existing platform, the 6th color (blue) was used for this “switching” status. However, users tended to see it as another constant status. Therefore, in the new design system, I combined the colors of the “on” and “off” statuses to indicate the “switching” status.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/sarea city-2x-webp/sarea_map pin_after-2.webp" width="100%" alt="map pin statuses">
+                    <video width="100%" autoplay loop muted>
+                        <source src="assets/img/sarea city-2x-webp/switching.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr>
+
+        <!--challenge 02-->
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Challenge 02: Smart Pole Information Module</h2>
+                <h3>Make the information module clearer</h3>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h3>What is the Information Module?</h3>
+                <p>The information module provides data about the smart pole and the attached IoT devices. Users can also edit the pole’s data or control the IoT devices through the information module, like adjusting the brightness of the lights. The module shows up when the map pin is clicked.</p>
+            </div>
+            <div class="col-md-8">
+                <img src="assets/img/sarea city-2x-webp/sarea_module-explain.webp" width="100%" alt="sarea city information module">
+            </div>
+        </div>
+
+        <div class="content-inner-section">
+            <div class="row">
+                <h3>Problem of the Old Modules:</h3>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4>Unorganized Information</h4>
+                    <p>In the existing module, the pole’s data are not grouped or properly organized, making it hard to find specific data and space-wasting.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/sarea city-2x-webp/sarea_module_before-1.webp" width="100%" alt="old information module">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4>Space-Consuming Module</h4>
+                    <p>While editing data, the pop-up window covers the map so that users cannot see the pins.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/sarea city-2x-webp/sarea_module_before-2.webp" width="100%" alt="old information module">
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-inner-section">
+            <div class="row">
+                <h3>How We Solved It:</h3>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h4>Position</h4>
+                    <p>The new information module is fixed on the right side of the map so that users can edit the pole’s information and check the map pins simultaneously.</p>
+                </div>
+                <div class="col-md-8">
+                    <img src="assets/img/sarea city-2x-webp/sarea_module_after-1.webp" width="100%" alt="new information module">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h4>Information Hierarchy</h4>
+                    <p>We sorted the information and the functions into several groups:</p>
+                    <ol>
+                        <li>On the top bar of the module, there is the pole’s name and a “setting” button for editing the pole’s information.</li>
+                        <li>The first part of the module is the smart pole’s information, including its overall device status, id number, serial number, position, affiliated group, and the linked electrical switch box.</li>
+                        <li>The second part includes three buttons of the main functions related to smart poles: “Switch box (show linked electrical switch box on the map),” “Repair (call for repair),” and “Repair History (show repair history record).”</li>
+                        <li>The device part contains the device information cards sorted by their categories.</li>
+                            <ol type="a">
+                                <li>In each device information card, users can view or edit the device’s data or control the device.</li>
+                            </ol>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/sarea city-2x-webp/sarea_module_after-2.webp" width="100%" alt="information module breakdown">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="project-back-btn">
+        <a href="index.html"><button>Back</button></a>
+    </div>
+
+    <!--footer here-->
+    <div id="linked-footer"></div>
+    
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--my js file-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
